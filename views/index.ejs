@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+  <div>
+    <form action="/send_msg" method="POST">
+        <div class="form-group">
+          <label for="num">Number</label>
+          <input required type="tel" class="form-control" name="num" id="num" placeholder="Enter number">
+          <small class="form-text text-muted">We'll never share your phone with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="msg">Message</label>
+          <input required type="text" class="form-control" name="msg" id="msg" placeholder="Enter Message">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+</body>
+</html>
